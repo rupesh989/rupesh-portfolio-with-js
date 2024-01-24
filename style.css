@@ -381,3 +381,101 @@ section .title::after {
   color: #009788;
   background: none;
 }
+
+/* services section styling */
+.services,
+.teams {
+  color: #fff;
+  background: #010509;
+}
+.services .title::before,
+.teams .title::before {
+  background: #fff;
+}
+
+.teams .title::after {
+  background: #009788;
+  content: "what i provide";
+}
+.services .serv-content .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover {
+  background: #009788;
+}
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+.services .serv-content .card i {
+  font-size: 50px;
+  color: #009788;
+  transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i {
+  color: #fff;
+}
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+/* contact section styling */
+.contact .title::after {
+  content: "get in touch";
+}
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact .contact-content .contact-left,
+.contact .contact-content .contact-right {
+  flex-basis: 40%;
+}
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content p {
+  text-align: justify;
+}
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info {
+  margin-left: 20px;
+}
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: #041110;
+}
+.contact .contact-content .info .head {
+  font-weight: 500;
+}
+.contact .contact-content .info .sub-title {
+  color: #040613;
+}
+
+.contact .contact-content .info .sub-title a:hover {
+  text-decoration: underline;
+}
+.thankyou {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: -2rem;
+}
